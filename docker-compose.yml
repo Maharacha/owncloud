@@ -19,7 +19,6 @@ services:
     depends_on:
       - db
       - redis
-      - internal-nginx
     environment:
       - OWNCLOUD_DOMAIN=${OWNCLOUD_DOMAIN}
       - OWNCLOUD_DB_TYPE=mysql
