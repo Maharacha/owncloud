@@ -37,7 +37,8 @@ services:
       timeout: 10s
       retries: 5
     volumes:
-      - files:/mnt/data      
+      - files:/mnt/data
+      - /mnt/external:/mnt/external
 
   db:
     image: webhippie/mariadb:latest
